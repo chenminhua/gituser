@@ -67,7 +67,7 @@ func main(){
     repos = append(repos, <-c ...)
   }
   sort.Sort(Repos(repos))
-
+  totalStars := 0
   rt := termtables.CreateTable()
   rt.AddHeaders("name","star","fork","html","language","description")
   for i:=0; i<len(repos);i++{
@@ -77,11 +77,9 @@ func main(){
     if repos[i]["stargazers_count"].(float64) == 0{
       break
     }
-
+    totalStars += int(repos[i]["stargazers_count"].(float64))
     rt.AddRow(repos[i]["name"], repos[i]["stargazers_count"],repos[i]["forks"],repos[i]["html_url"], repos[i]["language"],repos[i]["description"])
   }
   fmt.Println(rt.Render())
-
-
-
+  fmt.Println(fmt.Sprintf("%s has get %d stars", username, totalStars))
 }
