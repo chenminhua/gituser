@@ -22,6 +22,9 @@ req_header = {'Connection': 'Keep-Alive',
 repos = []
 retrieveDone = False
 
+if len(sys.argv) < 2:
+    print('Please input your github id!')
+    sys.exit(1)
 username = sys.argv[1]
 
 
