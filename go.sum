@@ -1,0 +1,4 @@
+github.com/brettski/go-termtables v0.0.0-20190907034855-12ddd59af020 h1:0AI3Zj64u2rpzmOrt4u3KUuw97KrMs6mcwNSaM3Rp5c=
+github.com/brettski/go-termtables v0.0.0-20190907034855-12ddd59af020/go.mod h1:m1lFPe1dlzu0nXHuCQVG/w2EeQNMA6h1MAaFLwUYAIM=
+github.com/mattn/go-runewidth v0.0.3-0.20170201023540-14207d285c6c h1:jQ6tSGsM/2TGhmbzHl9wXDtm2YjZDAfMsHyxaBDwywA=
+github.com/mattn/go-runewidth v0.0.3-0.20170201023540-14207d285c6c/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=

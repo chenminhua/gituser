@@ -1,14 +1,15 @@
 package main
 
 import (
-  "net/http"
-  "fmt"
-  "io/ioutil"
-  "encoding/json"
-  "os"
-  "math"
-  "github.com/apcera/termtables"
-  "sort"
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"math"
+	"net/http"
+	"os"
+	"sort"
+
+	"github.com/brettski/go-termtables"
 )
 
 // Repo alias
